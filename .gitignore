@@ -1,11 +1,9 @@
 # Environment variables
 .env
 
-# Data directory
-data/
-
 # Docker volumes
-files/
+config/
+servers/
 
 # Logs
 *.log

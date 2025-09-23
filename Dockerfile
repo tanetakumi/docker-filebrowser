@@ -13,8 +13,7 @@ RUN apk add --no-cache curl sudo shadow bash && \
 # Copy startup script
 COPY start.sh entrypoint.sh /app
 RUN chmod +x /app/start.sh && \
-    chmod +x /app/entrypoint.sh && \
-    mkdir -p /src
+    chmod +x /app/entrypoint.sh
 
 # Run the startup script
 CMD ["/app/entrypoint.sh", "/app/start.sh"]
