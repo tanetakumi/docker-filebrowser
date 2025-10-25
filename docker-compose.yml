@@ -9,6 +9,7 @@ services:
       - PGID=${PGID:-1000}
       - USERNAME=${INITIAL_USERNAME:-admin}
       - PASSWORD=${INITIAL_PASSWORD:-password}
+      - FB_DISABLE_EXEC=${FB_DISABLE_EXEC:-false}
     volumes:
       - ./config:/app/config
       - ./servers:/app/data/servers

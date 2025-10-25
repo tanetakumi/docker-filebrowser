@@ -7,7 +7,7 @@ ENV TZ=Asia/Tokyo
 WORKDIR /app
 
 # Install dependencies and filebrowser
-RUN apk add --no-cache curl sudo shadow bash && \
+RUN apk add --no-cache curl sudo shadow bash zip && \
     curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 
 # Copy startup script
