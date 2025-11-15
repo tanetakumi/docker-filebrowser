@@ -11,5 +11,5 @@ services:
       - PASSWORD=${INITIAL_PASSWORD:-password}
     volumes:
       - ./config:/app/config
-      - ./servers:/app/data/servers
+      - ./data:/app/data
     restart: unless-stopped

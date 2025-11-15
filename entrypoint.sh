@@ -36,7 +36,7 @@ else
     useradd -u "$PUID" -g appuser appuser
 fi
 
-chown -R $PUID:$PGID /app
+chown $PUID:$PGID /app/data
 
 # Start the command as appuser user in background
 exec sudo -u appuser -E env PATH="$PATH" "$@"
