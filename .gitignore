@@ -3,7 +3,4 @@
 
 # Docker volumes
 config/
-servers/
-
-# Logs
-*.log
+data/

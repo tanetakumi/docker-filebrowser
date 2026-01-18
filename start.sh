@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# current directory id /app
-
 USER=${USERNAME:-admin}
 PASS=${PASSWORD:-password}
 HASHEDPASS=$(filebrowser hash $PASS)
