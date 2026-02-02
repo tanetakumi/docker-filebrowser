@@ -12,5 +12,5 @@ services:
       - FB_DISABLE_EXEC=${FB_DISABLE_EXEC:-false}
     volumes:
       - ./config:/app/config
-      - ./data:/app/data
+      - ${DATA_PATH:-./data}:/app/data
     restart: unless-stopped
